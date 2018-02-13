@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es" original="AGENDA/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1795.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="AGENDA/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="AddEx.Content" translate="yes" xml:space="preserve">
+          <source>Add Exercises</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Añadir ejercicios</target>
+        </trans-unit>
+        <trans-unit id="AddGrocery.Text" translate="yes" xml:space="preserve">
+          <source>Add Grocery Item</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Agregar elemento de abarrotes</target>
+        </trans-unit>
+        <trans-unit id="Amount.Text" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Importe</target>
+        </trans-unit>
+        <trans-unit id="AmountPlace.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Importe</target>
+        </trans-unit>
+        <trans-unit id="BacktoLogin.Content" translate="yes" xml:space="preserve">
+          <source>Back to Login</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Volver a Inicio de sesión</target>
+        </trans-unit>
+        <trans-unit id="Calendar.Header" translate="yes" xml:space="preserve">
+          <source>Calendar</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Calendario</target>
+        </trans-unit>
+        <trans-unit id="Completed.Text" translate="yes" xml:space="preserve">
+          <source>Completed By:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Completada por:</target>
+        </trans-unit>
+        <trans-unit id="DailyText.Text" translate="yes" xml:space="preserve">
+          <source>Daily Exercises</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ejercicios diarios</target>
+        </trans-unit>
+        <trans-unit id="DAll.Content" translate="yes" xml:space="preserve">
+          <source>Delete List</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Eliminar lista</target>
+        </trans-unit>
+        <trans-unit id="DeAll.Content" translate="yes" xml:space="preserve">
+          <source>Delete Exercises</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Eliminar ejercicios</target>
+        </trans-unit>
+        <trans-unit id="DeFirst.Content" translate="yes" xml:space="preserve">
+          <source>Delete First Entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Borrar entrada primera</target>
+        </trans-unit>
+        <trans-unit id="DeLast.Content" translate="yes" xml:space="preserve">
+          <source>Delete Last Entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Eliminar la última entrada</target>
+        </trans-unit>
+        <trans-unit id="DeleteAll.Content" translate="yes" xml:space="preserve">
+          <source>Delete Data</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Eliminar datos</target>
+        </trans-unit>
+        <trans-unit id="DeleteFirst.Content" translate="yes" xml:space="preserve">
+          <source>Delete First Entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Borrar entrada primera</target>
+        </trans-unit>
+        <trans-unit id="DeleteLast.Content" translate="yes" xml:space="preserve">
+          <source>Delete Last Entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Eliminar la última entrada</target>
+        </trans-unit>
+        <trans-unit id="DFirst.Content" translate="yes" xml:space="preserve">
+          <source>Delete First Entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Borrar entrada primera</target>
+        </trans-unit>
+        <trans-unit id="DLast.Content" translate="yes" xml:space="preserve">
+          <source>Delete Last Entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Eliminar la última entrada</target>
+        </trans-unit>
+        <trans-unit id="DuePlace.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Fecha de vencimiento</target>
+        </trans-unit>
+        <trans-unit id="E1.Text" translate="yes" xml:space="preserve">
+          <source>Exercise One</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ejercicio uno</target>
+        </trans-unit>
+        <trans-unit id="E2.Text" translate="yes" xml:space="preserve">
+          <source>Exercise Two</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ejercicio dos</target>
+        </trans-unit>
+        <trans-unit id="E3.Text" translate="yes" xml:space="preserve">
+          <source>Exercise Three</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ejercicio tres</target>
+        </trans-unit>
+        <trans-unit id="E4.Text" translate="yes" xml:space="preserve">
+          <source>Exercise Four</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ejercicio cuatro</target>
+        </trans-unit>
+        <trans-unit id="Email.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Correo electrónico</target>
+        </trans-unit>
+        <trans-unit id="Ename1.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Exercise Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nombre del ejercicio</target>
+        </trans-unit>
+        <trans-unit id="Ename2.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Exercise Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nombre del ejercicio</target>
+        </trans-unit>
+        <trans-unit id="Ename4.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Exercise Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nombre del ejercicio</target>
+        </trans-unit>
+        <trans-unit id="FitHeader.Header" translate="yes" xml:space="preserve">
+          <source>Fitness Scheduler</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Programador de fitness</target>
+        </trans-unit>
+        <trans-unit id="GroceryList.Header" translate="yes" xml:space="preserve">
+          <source>Grocery List</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lista de compras</target>
+        </trans-unit>
+        <trans-unit id="GroceryPlace.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Grocery</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tienda de comestibles</target>
+        </trans-unit>
+        <trans-unit id="Login.Content" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Inicio de sesión</target>
+        </trans-unit>
+        <trans-unit id="Password.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Contraseña</target>
+        </trans-unit>
+        <trans-unit id="R1.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="R2.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="R3.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="R4.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="Reg.Content" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Registrar</target>
+        </trans-unit>
+        <trans-unit id="Register.Content" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Registrar</target>
+        </trans-unit>
+        <trans-unit id="RegPassword.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Contraseña</target>
+        </trans-unit>
+        <trans-unit id="RegUser.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Username</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nombre de usuario</target>
+        </trans-unit>
+        <trans-unit id="Reps1.Text" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="Reps2.Text" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="Reps3.Text" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="Reps4.Text" translate="yes" xml:space="preserve">
+          <source>Reps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Representantes de</target>
+        </trans-unit>
+        <trans-unit id="ShopHeader.Header" translate="yes" xml:space="preserve">
+          <source>Shopping List</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lista de la compra</target>
+        </trans-unit>
+        <trans-unit id="SignOut.Content" translate="yes" xml:space="preserve">
+          <source>Sign Out</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cerrar sesión</target>
+        </trans-unit>
+        <trans-unit id="SignOut1.Content" translate="yes" xml:space="preserve">
+          <source>Sign Out</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cerrar sesión</target>
+        </trans-unit>
+        <trans-unit id="SignOut2.Content" translate="yes" xml:space="preserve">
+          <source>Sign Out</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cerrar sesión</target>
+        </trans-unit>
+        <trans-unit id="SignOut3.Content" translate="yes" xml:space="preserve">
+          <source>Sign Out</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cerrar sesión</target>
+        </trans-unit>
+        <trans-unit id="To-DoHeader.Header" translate="yes" xml:space="preserve">
+          <source>Tasks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lista de tareas</target>
+        </trans-unit>
+        <trans-unit id="To-DoList.Header" translate="yes" xml:space="preserve">
+          <source>Tasks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lista de tareas</target>
+        </trans-unit>
+        <trans-unit id="To-DoPlace.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Enter Task</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tareas</target>
+        </trans-unit>
+        <trans-unit id="To-DoText.Text" translate="yes" xml:space="preserve">
+          <source>Tasks:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tareas:</target>
+        </trans-unit>
+        <trans-unit id="User.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Username</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nombre de usuario</target>
+        </trans-unit>
+        <trans-unit id="Ename.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Exercise Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nombre del ejercicio</target>
+        </trans-unit>
+        <trans-unit id="AddTask.Content" translate="yes" xml:space="preserve">
+          <source>Add Task</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Añadir tarea</target>
+        </trans-unit>
+        <trans-unit id="AddtoShopping.Content" translate="yes" xml:space="preserve">
+          <source>Add to Shopping List</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Añadir a lista de la compra</target>
+        </trans-unit>
+        <trans-unit id="exerciseData.Header" translate="yes" xml:space="preserve">
+          <source>Exercise List</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lista de ejercicios</target>
+        </trans-unit>
+        <trans-unit id="String1" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion"></target>
+        </trans-unit>
+        <trans-unit id="AddToCal.Content" translate="yes" xml:space="preserve">
+          <source>Add</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Agregar</target>
+        </trans-unit>
+        <trans-unit id="Date.Text" translate="yes" xml:space="preserve">
+          <source>Date:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fecha:</target>
+        </trans-unit>
+        <trans-unit id="Details.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Detalles</target>
+        </trans-unit>
+        <trans-unit id="Details.Text" translate="yes" xml:space="preserve">
+          <source>Details:</source>
+          <target state="translated">Detalles:</target>
+        </trans-unit>
+        <trans-unit id="Duration.Text" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Duración</target>
+        </trans-unit>
+        <trans-unit id="Heading.Text" translate="yes" xml:space="preserve">
+          <source>Add an Event to Your Calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Añadir un evento a tu calendario</target>
+        </trans-unit>
+        <trans-unit id="Location.Text" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ubicación</target>
+        </trans-unit>
+        <trans-unit id="Subject.Text" translate="yes" xml:space="preserve">
+          <source>Subject</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Asunto</target>
+        </trans-unit>
+        <trans-unit id="SubjectPlace.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Subject</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Asunto</target>
+        </trans-unit>
+        <trans-unit id="Time.Text" translate="yes" xml:space="preserve">
+          <source>Time</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Hora</target>
+        </trans-unit>
+        <trans-unit id="LocationPlace.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ubicación</target>
+        </trans-unit>
+        <trans-unit id="OpenCalendar.Content" translate="yes" xml:space="preserve">
+          <source>Calendar</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Calendario</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

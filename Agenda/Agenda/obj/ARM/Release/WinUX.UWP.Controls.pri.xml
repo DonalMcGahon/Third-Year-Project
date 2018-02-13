@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="WinUX.UWP.Controls" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="WinUX.UWP.Controls">
+				<NamedResource name="WinUX.UWP.Controls.xr.xml" uri="ms-resource://WinUX.UWP.Controls/Files/WinUX.UWP.Controls/WinUX.UWP.Controls.xr.xml">
+					<Candidate type="Path">
+						<Value>WinUX.UWP.Controls\WinUX.UWP.Controls.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://WinUX.UWP.Controls/Files/WinUX.UWP.Controls/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

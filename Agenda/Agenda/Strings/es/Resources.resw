@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddEx.Content" xml:space="preserve">
+    <value>Añadir ejercicios</value>
+  </data>
+  <data name="AddGrocery.Text" xml:space="preserve">
+    <value>Agregar elemento de abarrotes</value>
+  </data>
+  <data name="Amount.Text" xml:space="preserve">
+    <value>Importe</value>
+  </data>
+  <data name="AmountPlace.PlaceholderText" xml:space="preserve">
+    <value>Importe</value>
+  </data>
+  <data name="BacktoLogin.Content" xml:space="preserve">
+    <value>Volver a Inicio de sesión</value>
+  </data>
+  <data name="Calendar.Header" xml:space="preserve">
+    <value>Calendario</value>
+  </data>
+  <data name="Completed.Text" xml:space="preserve">
+    <value>Completada por:</value>
+  </data>
+  <data name="DailyText.Text" xml:space="preserve">
+    <value>Ejercicios diarios</value>
+  </data>
+  <data name="DAll.Content" xml:space="preserve">
+    <value>Eliminar lista</value>
+  </data>
+  <data name="DeAll.Content" xml:space="preserve">
+    <value>Eliminar ejercicios</value>
+  </data>
+  <data name="DeFirst.Content" xml:space="preserve">
+    <value>Borrar entrada primera</value>
+  </data>
+  <data name="DeLast.Content" xml:space="preserve">
+    <value>Eliminar la última entrada</value>
+  </data>
+  <data name="DeleteAll.Content" xml:space="preserve">
+    <value>Eliminar datos</value>
+  </data>
+  <data name="DeleteFirst.Content" xml:space="preserve">
+    <value>Borrar entrada primera</value>
+  </data>
+  <data name="DeleteLast.Content" xml:space="preserve">
+    <value>Eliminar la última entrada</value>
+  </data>
+  <data name="DFirst.Content" xml:space="preserve">
+    <value>Borrar entrada primera</value>
+  </data>
+  <data name="DLast.Content" xml:space="preserve">
+    <value>Eliminar la última entrada</value>
+  </data>
+  <data name="DuePlace.PlaceholderText" xml:space="preserve">
+    <value>Fecha de vencimiento</value>
+  </data>
+  <data name="E1.Text" xml:space="preserve">
+    <value>Ejercicio uno</value>
+  </data>
+  <data name="E2.Text" xml:space="preserve">
+    <value>Ejercicio dos</value>
+  </data>
+  <data name="E3.Text" xml:space="preserve">
+    <value>Ejercicio tres</value>
+  </data>
+  <data name="E4.Text" xml:space="preserve">
+    <value>Ejercicio cuatro</value>
+  </data>
+  <data name="Email.PlaceholderText" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="Ename1.PlaceholderText" xml:space="preserve">
+    <value>Nombre del ejercicio</value>
+  </data>
+  <data name="Ename2.PlaceholderText" xml:space="preserve">
+    <value>Nombre del ejercicio</value>
+  </data>
+  <data name="Ename4.PlaceholderText" xml:space="preserve">
+    <value>Nombre del ejercicio</value>
+  </data>
+  <data name="FitHeader.Header" xml:space="preserve">
+    <value>Programador de fitness</value>
+  </data>
+  <data name="GroceryList.Header" xml:space="preserve">
+    <value>Lista de compras</value>
+  </data>
+  <data name="GroceryPlace.PlaceholderText" xml:space="preserve">
+    <value>Tienda de comestibles</value>
+  </data>
+  <data name="Login.Content" xml:space="preserve">
+    <value>Inicio de sesión</value>
+  </data>
+  <data name="Password.PlaceholderText" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="R1.PlaceholderText" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="R2.PlaceholderText" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="R3.PlaceholderText" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="R4.PlaceholderText" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="Reg.Content" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="Register.Content" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="RegPassword.PlaceholderText" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="RegUser.PlaceholderText" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="Reps1.Text" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="Reps2.Text" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="Reps3.Text" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="Reps4.Text" xml:space="preserve">
+    <value>Representantes de</value>
+  </data>
+  <data name="ShopHeader.Header" xml:space="preserve">
+    <value>Lista de la compra</value>
+  </data>
+  <data name="SignOut.Content" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="SignOut1.Content" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="SignOut2.Content" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="SignOut3.Content" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="To-DoHeader.Header" xml:space="preserve">
+    <value>Lista de tareas</value>
+  </data>
+  <data name="To-DoList.Header" xml:space="preserve">
+    <value>Lista de tareas</value>
+  </data>
+  <data name="To-DoPlace.PlaceholderText" xml:space="preserve">
+    <value>Tareas</value>
+  </data>
+  <data name="To-DoText.Text" xml:space="preserve">
+    <value>Tareas:</value>
+  </data>
+  <data name="User.PlaceholderText" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="Ename.PlaceholderText" xml:space="preserve">
+    <value>Nombre del ejercicio</value>
+  </data>
+  <data name="AddTask.Content" xml:space="preserve">
+    <value>Añadir tarea</value>
+  </data>
+  <data name="AddtoShopping.Content" xml:space="preserve">
+    <value>Añadir a lista de la compra</value>
+  </data>
+  <data name="exerciseData.Header" xml:space="preserve">
+    <value>Lista de ejercicios</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="AddToCal.Content" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="Date.Text" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="Details.PlaceholderText" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="Details.Text" xml:space="preserve">
+    <value>Detalles:</value>
+  </data>
+  <data name="Duration.Text" xml:space="preserve">
+    <value>Duración</value>
+  </data>
+  <data name="Heading.Text" xml:space="preserve">
+    <value>Añadir un evento a tu calendario</value>
+  </data>
+  <data name="Location.Text" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="Subject.Text" xml:space="preserve">
+    <value>Asunto</value>
+  </data>
+  <data name="SubjectPlace.PlaceholderText" xml:space="preserve">
+    <value>Asunto</value>
+  </data>
+  <data name="Time.Text" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="LocationPlace.PlaceholderText" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="OpenCalendar.Content" xml:space="preserve">
+    <value>Calendario</value>
+  </data>
+</root>

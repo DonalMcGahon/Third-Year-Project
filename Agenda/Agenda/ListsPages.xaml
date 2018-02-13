@@ -1,0 +1,305 @@
+﻿<Page
+    x:Class="Agenda.ListsPages"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Agenda"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!-- Pivot -->
+    <Pivot x:Name ="pvtAgenda"  Title="Agenda">
+        <!-- Pivot for TO-DO List List -->
+        <PivotItem x:Uid="To-DoHeader" Header="Tasks">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/office.jpg" 
+                        Stretch="UniformToFill" Opacity="0.5" />
+                </Grid.Background>
+
+                <StackPanel HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="auto" Margin="0,0,0,0">
+
+                    <!-- Textblock -->
+                    <TextBlock x:Name="textBlock" x:Uid="To-DoText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tasks:" VerticalAlignment="Top" Margin="20,25,0,0"/>
+
+                    <!-- Textbox to allow user to input data -->
+                    <TextBox x:Name="textBox" x:Uid="To-DoPlace" PlaceholderText="Enter Task" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,0,0,0" Width="210" InputScope="Url" AutomationProperties.HelpText=""/>
+                    <!-- Textblock -->
+                    <TextBlock x:Name="textBlock_Copy" x:Uid="Completed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Completed By:" VerticalAlignment="Top" Margin="20,0,0,0"/>
+
+                    <!-- Textbox that bring up calendar to allow user to input date due -->
+                    <TextBox x:Name="textBox_Copy" x:Uid="DuePlace" GotFocus="textBox_GotFocus" PlaceholderText="Due Date" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,0,0,0" Width="210"/>
+                    <CalendarDatePicker x:Name="calendar" Width="0" Height="0" DateChanged="CalendarDatePicker_DateChanged" />
+
+                    <!-- Button to Add -->
+                    <Button x:Name="addButton" x:Uid="AddTask" Width="auto" Height="45" Background="AliceBlue" Foreground="DarkBlue" Content="Add Task" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20,5,0,0" Style="{StaticResource MyButtonStyle}" Click="addButton_Click">
+                    </Button>
+
+                    <!-- Button to Delete First Entry -->
+                    <Button x:Name="button6" x:Uid="DeleteFirst" Width="auto" Height="45" Background="AliceBlue" Foreground="DarkBlue" Content="Delete First Entry" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,250,0,0" Click="button6_Click" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Button to Delete First Entry -->
+                    <Button x:Name="button9" x:Uid="DeleteLast" Width="auto" Height="45" Background="AliceBlue" Foreground="DarkBlue" Content="Delete Last Entry" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="75,0,0,0" Click="button9_Click" Style="{StaticResource MyButtonStyle}"/>
+
+
+                    <!-- Button to Delete List -->
+                    <Button x:Name="button5" x:Uid="DeleteAll" Width="auto" Height="45" Background="AliceBlue" Foreground="DarkBlue" Content="Delete Data" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,10,0,0" Click="button5_Click" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Button to get back to home page -->
+                    <Button x:Name="button" x:Uid="SignOut" Width="auto" Height="45" Background="AliceBlue" Foreground="DarkBlue" Content="Sign Out" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,30,0,0" Click="button_Click" Style="{StaticResource MyButtonStyle}"/>
+
+                </StackPanel>
+
+
+                <!-- List View of all TO-DO's user has put in -->
+                <ListView Header="Tasks" x:Uid="To-DoList" x:Name="myData" HorizontalAlignment="Center" Height="auto" Width="auto" Margin="0,213,-14,283">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Width="500"  Background="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Center" x:Name="CheckBoxItem"/>
+                                <TextBlock Grid.Column="1" x:Name="Id" Text="{Binding Path=Id}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="2" x:Name="name" Text="{Binding Path=Name}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="3" x:Name="date" Text="{Binding Path=Date}" TextWrapping="Wrap" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+
+            </Grid>
+
+        </PivotItem>
+        <!-- EndPivot for TO-DO List List -->
+
+
+        <!-- Pivot for Shopping List -->
+        <PivotItem x:Name ="pvtShopping" x:Uid="ShopHeader" Header="Shopping List">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/grocery-shopping.jpg" 
+                        Stretch="UniformToFill" Opacity="0.5" />
+                </Grid.Background>
+
+
+                <StackPanel HorizontalAlignment="Center" Height="660" VerticalAlignment="Top" Width="auto" Margin="0,0,0,0">
+
+                    <!-- Textblock -->
+                    <TextBlock x:Name="Textblock" x:Uid="AddGrocery" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Add Grocery Item" VerticalAlignment="Top" Margin="10,0,0,0"/>
+
+                    <!-- AutoSuggestButton to add to list, it can suggest items user may want to add to their grocery list -->
+                    <AutoSuggestBox x:Name="AddGrocery" x:Uid="GroceryPlace" PlaceholderText="Grocery" TextChanged="AutoSuggestBox_TextChanged"
+                    HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Top" Width="180" Height="auto">
+                    </AutoSuggestBox>
+
+                    <!-- TextBlock-->
+                    <TextBlock  x:Name="Textblock2" x:Uid="Amount" HorizontalAlignment="Center" Height="19" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"></TextBlock>
+
+                    <!-- TextBox for amount of groceries -->
+                    <TextBox x:Name="textBox9" x:Uid="AmountPlace" HorizontalAlignment="Center" PlaceholderText="Amount" TextWrapping="Wrap" Height="30" Width="auto" VerticalAlignment="Top" TextChanged="textBox9_TextChanged" FontSize="12"/>
+
+
+                    <!-- AppBarButton to add user input to list -->
+                    <AppBarButton x:Name="done" x:Uid="AddtoShopping" HorizontalAlignment="Center" Content="Add to Shopping List" Icon="Add" Background="#FFACFABE" Foreground="DarkBlue" VerticalAlignment="Top" Width="auto" Margin="0,5,0,0" Height="38" Click="done_Click" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Button to Delete First Entry -->
+                    <Button x:Name="button7" x:Uid="DFirst" Content="Delete First Entry" Width="auto" Height="38" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,320,0,0" Click="button7_Click" Background="#FFACFABE" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Button to Delete Last Entry -->
+                    <Button x:Name="button10" x:Uid="DLast" Content="Delete Last Entry" Width="auto" Height="38" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" Click="button10_Click" Background="#FFACFABE" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+
+                    <!-- Delete List -->
+                    <Button x:Name="groceryDelete" x:Uid="DAll" Content="Delete List" Width="auto" Height="38" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Click="groceryDelete_Click" Background="#FFACFABE" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+                    <!-- Button to get back to home page -->
+                    <Button x:Name="button2" x:Uid="SignOut1" Width="auto" Height="38" Content="Sign Out" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Click="button_Click" Background="#FF6FDF88" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                </StackPanel>
+
+                <!-- List View of all groceries user has put in -->
+                <ListView Header="Grocery List" x:Uid="GroceryList" x:Name="groceryData" HorizontalAlignment="Center" Height="auto" Width="auto" Margin="0,215,0,280">
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <Grid Width="400" Background="White" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Center" x:Name="CheckBoxItem"/>
+                                <TextBlock Grid.Column="1" x:Name="gId" Text="{Binding Path=gId}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="2" x:Name="gname" Text="{Binding Path=gName}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="3" x:Name="gamount" Text="{Binding Path=gAmount}" TextWrapping="Wrap" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+        </PivotItem>
+        <!-- EndPivot for Shopping List -->
+
+        <!-- Pivot for Fitness Tracker List -->
+        <PivotItem x:Name ="pvtFitness" x:Uid="FitHeader" Header="Fitness Scheduler">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/fitness.jpg" 
+                        Stretch="UniformToFill" Opacity="0.5" />
+                </Grid.Background>
+
+                
+                <!--Stack Panel for Exercises-->
+                <StackPanel HorizontalAlignment="Center" Height="300" VerticalAlignment="Top" Width="248">
+
+                    <!-- Heading -->
+                    <TextBlock x:Name="textBlock10" x:Uid="DailyText" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Daily Exercises" VerticalAlignment="Top" Width="auto"/>
+
+
+                    <TextBlock x:Name="textBlock2" x:Uid="E1" Text="Exercise One" TextWrapping="Wrap" Margin="0,19,0,0"/>
+
+                    <!-- AutoSuggestButton to add to exericse tracker, it can suggest exercises user may want to add -->
+                    <AutoSuggestBox x:Name="textBox1" x:Uid="Ename" PlaceholderText="Exercise Name" TextChanged="AutoSuggestBox_TextChanged1"
+                    HorizontalAlignment="Center" Margin="0,0,30,0" Width="180" VerticalAlignment="Top" Height="auto">
+                    </AutoSuggestBox>
+
+                    <TextBlock x:Name="textBlock3" x:Uid="E2" Text="Exercise Two" TextWrapping="Wrap"/>
+                    
+                    <!-- AutoSuggestButton to add to exericse tracker, it can suggest exercises user may want to add -->
+                    <AutoSuggestBox x:Name="textBox2" x:Uid="Ename1" PlaceholderText="Exercise Name" TextChanged="AutoSuggestBox_TextChanged1"
+                    HorizontalAlignment="Center" Margin="0,0,30,0" Width="180" VerticalAlignment="Top" Height="auto">
+                    </AutoSuggestBox>
+                    
+                    <TextBlock x:Name="textBlock4" x:Uid="E3" Text="Exercise Three" TextWrapping="Wrap"/>
+                    
+                    <!-- AutoSuggestButton to add to exericse tracker, it can suggest exercises user may want to add -->
+                    <AutoSuggestBox x:Name="textBox3" x:Uid="Ename2" PlaceholderText="Exercise Name" TextChanged="AutoSuggestBox_TextChanged1"
+                    HorizontalAlignment="Center" Margin="0,0,30,0" Width="180" VerticalAlignment="Top" Height="auto">
+                    </AutoSuggestBox>
+                    
+                    <!--Add Exercises Button -->
+                    <Button x:Name="button1" x:Uid="AddEx" Content="Add Exercises" HorizontalAlignment="Center" Background="AliceBlue" Foreground="DarkBlue" Height="38" Width="auto" Click="button1_Click" Style="{StaticResource MyButtonStyle}"/>
+                    
+                </StackPanel>
+
+                <!--Stack Panel for Reps-->
+                <StackPanel HorizontalAlignment="Center" Height="208" VerticalAlignment="Top" Width="auto" Margin="300,39,0,0">
+                    <TextBlock x:Name="textBlock9" x:Uid="Reps1" Width="auto" TextWrapping="Wrap" Text="Reps"/>
+                    <TextBox x:Name="textBox5" x:Uid="R1" PlaceholderText="Reps" TextWrapping="Wrap" Height="30" TextChanged="textBox5_TextChanged"/>
+                    <TextBlock x:Name="textBlock6" x:Uid="Reps2" TextWrapping="Wrap" Height="20" Text="Reps"/>
+                    <TextBox x:Name="textBox6" x:Uid="R2" PlaceholderText="Reps" TextWrapping="Wrap" Height="30" TextChanged="textBox6_TextChanged"/>
+                    <TextBlock x:Name="textBlock7" x:Uid="Reps3" TextWrapping="Wrap" Height="20" Text="Reps"/>
+                    <TextBox x:Name="textBox7" x:Uid="R3" PlaceholderText="Reps" TextWrapping="Wrap" Height="30" TextChanged="textBox7_TextChanged"/>
+
+                </StackPanel>
+
+
+                <!-- List View of all groceries user has put in -->
+                <ListView Header="Exercise List" x:Name="exerciseData" Background="White" Foreground="DarkBlue" x:Uid="ExerciseData" HorizontalAlignment="Center" Height="auto" Width="auto" Margin="0,250,0,250">
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <Grid Width="500" Background="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" x:Name="eId" Text="{Binding Path=eId}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="1" x:Name="ex1" Text="{Binding Path=ex1}" TextWrapping="Wrap"/>
+                                <TextBlock Grid.Column="2" x:Name="rep1" Text="{Binding Path=rep1}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Column="3" x:Name="ex2" Text="{Binding Path=ex2}" TextWrapping="Wrap"/>
+                                <TextBlock Grid.Column="4" x:Name="rep2" Text="{Binding Path=rep2}" TextWrapping="Wrap"/>
+                                <TextBlock Grid.Column="5" x:Name="ex3" Text="{Binding Path=ex3}" TextWrapping="Wrap"/>
+                                <TextBlock Grid.Column="6" x:Name="rep3" Text="{Binding Path=rep3}" TextWrapping="Wrap"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+                <StackPanel HorizontalAlignment="Center" Height="185" VerticalAlignment="Bottom" Width="248">
+                    <!-- Button to Delete First Entry -->
+                    <Button x:Name="button8" x:Uid="DeFirst" Content="Delete First Entry" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="auto" Height="38" Click="button8_Click" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Button to Delete Last Entry -->
+                    <Button x:Name="button11" x:Uid="DeLast" Content="Delete Last Entry" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="auto" Height="38" Click="button11_Click" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Delete Exercises -->
+                    <Button x:Name="delete_Exercises" x:Uid="DeAll" Content="Delete Exercises" HorizontalAlignment="Center" Height="38" Width="auto" Margin="0,10,0,0" Click="delete_Exercises_Click" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                    <!-- Button to get back to home page -->
+                    <Button x:Name="button3" x:Uid="SignOut2" Content="Sign Out" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,0" Width="auto" Click="button_Click" Height="38" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                </StackPanel>
+
+
+            </Grid>
+        </PivotItem>
+        <!-- EndPivot for Fitness Tracker List -->
+
+        <!-- Pivot for Calendar Tracker List -->
+        <PivotItem x:Name ="pvtCalendar" x:Uid="Calendar" Header="Calendar">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/sun1.jpg" 
+                        Stretch="UniformToFill" Opacity="0.5" />
+                </Grid.Background>
+                
+                <StackPanel VerticalAlignment="Top" Margin="0,40,0,0" HorizontalAlignment="Center" Width="350">
+
+                    <TextBlock x:Uid="Heading" Text="Add an Event to Your Calendar" Width="auto" Height="40" FontSize="20"></TextBlock>
+                    <TextBlock x:Uid="Subject" Text="Subject:"/>
+                    <TextBox Name="Subject" x:Uid="SubjectPlace" PlaceholderText="Subject" Margin="0,5,0,0" Width="auto"></TextBox>
+                    <TextBlock x:Uid="Location" Text="Location:"/>
+                    <TextBox Name="Location" x:Uid="LocationPlace" PlaceholderText="Location" Margin="0,5,0,0" Width="auto"></TextBox>
+                    <TextBlock x:Uid="Deatils" Text="Details:"/>
+                    <TextBox Name="Details" x:Uid="DeatilsPlace" PlaceholderText="Details" Margin="0,5,0,0" Width="auto"></TextBox>
+
+                    <TextBlock x:Uid="Date" Text="Date:"/>
+                    <DatePicker Name="StartDate" Margin="0,5,0,0"></DatePicker>
+                    <TextBlock x:Uid="Time" Text="Time:"/>
+                    <TimePicker Name="StartTime" Margin="0,5,0,0"></TimePicker>
+
+                    <TextBlock x:Uid="Duration" Text="Duration"></TextBlock>
+                    <ComboBox x:Name="Duration" Margin="0,5,0,0" SelectedIndex="0">
+                        <ComboBoxItem Tag="15" Content="15 Minutes"/>
+                        <ComboBoxItem Tag="30" Content="30 Minutes"/>
+                        <ComboBoxItem Tag="45" Content="45 Minutes"/>
+                        <ComboBoxItem Tag="60" Content="1 hour"/>
+                        <ComboBoxItem Tag="120" Content="2 hour"/>
+                        <ComboBoxItem Tag="180" Content="3 hour"/>
+                        <ComboBoxItem Tag="240" Content="4 hour"/>
+                        <ComboBoxItem Tag="300" Content="5 hour"/>
+                        <ComboBoxItem Tag="600" Content="10 hour"/>
+                        <ComboBoxItem Tag="900" Content="15 hour"/>
+                        <ComboBoxItem Tag="1440" Content="All Day"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,340,0,0" Width="300">
+
+                    <Button x:Name="Add" x:Uid="AddToCal" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="38" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}" Click="Add_Click"/>
+                    <Button x:Name="Calendar" x:Uid="OpenCalendar" Content="Calendar" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="38" Width="auto" Margin="0,10,0,0" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}" Click="Calendar_Click"/>
+                    <Button x:Name="button4" x:Uid="SignOut3" Content="Sign Out" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Width="auto" Click="button_Click" Height="38" Background="AliceBlue" Foreground="DarkBlue" Style="{StaticResource MyButtonStyle}"/>
+
+                </StackPanel>
+
+
+
+            </Grid>
+        </PivotItem>
+        <!-- EndPivot for Calendar List -->
+
+
+    </Pivot>
+</Page>

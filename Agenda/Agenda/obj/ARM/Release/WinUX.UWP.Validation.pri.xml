@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="WinUX.UWP.Validation" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="WinUX.UWP.Validation">
+				<NamedResource name="WinUX.UWP.Validation.xr.xml" uri="ms-resource://WinUX.UWP.Validation/Files/WinUX.UWP.Validation/WinUX.UWP.Validation.xr.xml">
+					<Candidate type="Path">
+						<Value>WinUX.UWP.Validation\WinUX.UWP.Validation.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://WinUX.UWP.Validation/Files/WinUX.UWP.Validation/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ArrayOfCacheFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CacheFile>
+    <FileName>Strings\en-US\Resources.resw</FileName>
+    <Checksum>5285114188158672222251852141081012372065135</Checksum>
+    <ModifiedTime>2017-04-18T14:16:23.109462</ModifiedTime>
+    <CacheFileType>NeutralResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+  <CacheFile>
+    <FileName>MultilingualResources\Agenda.es.xlf</FileName>
+    <Checksum>179721691412652215454522923561346910159</Checksum>
+    <ModifiedTime>2017-04-18T14:16:56.6499195+01:00</ModifiedTime>
+    <CacheFileType>XliffResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+  <CacheFile>
+    <FileName>Strings\es\Resources.resw</FileName>
+    <Checksum>91450301681592014812020514912815543107182</Checksum>
+    <ModifiedTime>2017-04-22T14:45:04.2720136+01:00</ModifiedTime>
+    <CacheFileType>LanguageResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+  <CacheFile>
+    <FileName>MultilingualResources\Agenda.fr.xlf</FileName>
+    <Checksum>162134219941321052241061231871612441909522139</Checksum>
+    <ModifiedTime>2017-04-18T14:17:28.5957348+01:00</ModifiedTime>
+    <CacheFileType>XliffResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+  <CacheFile>
+    <FileName>Strings\fr\Resources.resw</FileName>
+    <Checksum>5797912448318325014566652451351148256167</Checksum>
+    <ModifiedTime>2017-04-22T14:45:04.2890474+01:00</ModifiedTime>
+    <CacheFileType>LanguageResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+  <CacheFile>
+    <FileName>MultilingualResources\Agenda.pl.xlf</FileName>
+    <Checksum>2242471627735242231701051385925414319245162</Checksum>
+    <ModifiedTime>2017-04-18T14:17:58.4439293+01:00</ModifiedTime>
+    <CacheFileType>XliffResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+  <CacheFile>
+    <FileName>Strings\pl\Resources.resw</FileName>
+    <Checksum>162012411691011261158907011110322918164203</Checksum>
+    <ModifiedTime>2017-04-22T14:45:04.3020817+01:00</ModifiedTime>
+    <CacheFileType>LanguageResource</CacheFileType>
+    <WarningMessage />
+  </CacheFile>
+</ArrayOfCacheFile>
